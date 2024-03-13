@@ -1,4 +1,3 @@
-// pokemonDetail.js
 
 function convertPokemonDetail(pokemon) {
     return `<section id="pokemonDetail" class="contentDetail ${pokemon.type}">
@@ -37,8 +36,6 @@ function convertPokemonDetail(pokemon) {
             
     `
 }
-
-
 
 function loadPokemonDetail(pokemonName) {
     pokeApi.getPokemonDetailByName(pokemonName).then((pokemon) => {

@@ -49,18 +49,11 @@ loadMoreButton.addEventListener('click', () => {
 
 function abrirModal(pokemonName) {
     const modalContent = document.getElementById('modal-content');
-
-    // Verificar se o modal-content foi encontrado no DOM
-    if (modalContent) {
-        modalContent.innerHTML = '';
-        loadPokemonDetail(pokemonName);
-        document.getElementById('modal').style.display = 'flex';
-    } else {
-        console.error('Elemento modal-content não encontrado no DOM.');
-    }
+    modalContent.innerHTML = '';
+    loadPokemonDetail(pokemonName);
+    document.getElementById('modal').style.display = 'flex';
+    
 }
-
-
 
 function fecharModal() {
     document.getElementById('modal').style.display = 'none';

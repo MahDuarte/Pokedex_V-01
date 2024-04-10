@@ -1,0 +1,25 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(232,172,63,1) 4%, rgba(230,230,51,1) 15%, rgba(72,218,72,1) 30%, rgba(128,128,128,1) 52%, rgba(255,192,203,1) 81%, rgba(205,200,200,1) 96%);
+}
+
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
